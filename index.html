@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Pdf</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        iframe {
+            width: 100%;
+            height: 800px; /* Adjust height as needed */
+            border: none;
+        }
+        .form-actions {
+            margin-top: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+            width: 150px; /* Fixed width */
+            height: 40px; /* Fixed height */
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2>Fill the PDF Form</h2>
+    <iframe id="pdfViewer" src="testing.pdf"></iframe>
+
+    <div class="form-actions">
+        <button onclick="editPDF()">Edit PDF</button>
+        <button onclick="sendEmail()">Send</button>
+    </div>
+
+    <script>
+        function editPDF() {
+            // Open a new window/tab to the PDF editing website
+            window.open('https://www.ilovepdf.com/edit-pdf', '_blank');
+        }
+
+        function sendEmail() {
+            // Prepare the email link for Gmail
+            var subject = encodeURIComponent('Filled PDF Form');
+            var body = encodeURIComponent('Please find the filled PDF form attached.');
+
+            // Construct the Gmail compose URL with pre-filled recipient, subject, and body
+            var gmailUrl = 'mailto:sitinazura@kkseg.edu.my' + '?subject=' + subject + '&body=' + body;
+
+            // Open Gmail compose window
+            window.open(gmailUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
