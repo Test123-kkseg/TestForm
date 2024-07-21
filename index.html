@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Borang</title>
+    <title>Borang Penangguhan dan Penggantian Kuliah</title>
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 
@@ -15,7 +15,7 @@
        }
        iframe {
            width: 100%;
-           height: 800px; /* Adjust height as needed */
+           height: 700px; /* Adjust height as needed */
            border: none;
        }
        .form-actions {
@@ -52,174 +52,198 @@
          -webkit-transition: all 0.3s;
          -moz-transition: all 0.3s;
          transition: all 0.3s;
-         width: auto;
+         width: 350px;
          height: auto;
        }
 
        .btn:after {
-   content: '';
-   position: absolute;
-   z-index: -1;
-   -webkit-transition: all 0.3s;
-   -moz-transition: all 0.3s;
-   transition: all 0.3s;
- }
+           content: '';
+           position: absolute;
+           z-index: -1;
+           -webkit-transition: all 0.3s;
+           -moz-transition: all 0.3s;
+           transition: all 0.3s;
+         }
 
- /* Pseudo elements for icons */
- .btn:before {
-   font-family: 'FontAwesome';
-   speak: none;
-   font-style: normal;
-   font-weight: normal;
-   font-variant: normal;
-   text-transform: none;
-   line-height: 1;
-   position: relative;
-   -webkit-font-smoothing: antialiased;
- }
+         /* Pseudo elements for icons */
+         .btn:before {
+           font-family: 'FontAwesome';
+           speak: none;
+           font-style: normal;
+           font-weight: normal;
+           font-variant: normal;
+           text-transform: none;
+           line-height: 1;
+           position: relative;
+           -webkit-font-smoothing: antialiased;
+         }
 
 
- /* Icon separator */
- .btn-sep {
-   padding: 25px 60px 25px 120px;
- }
+         /* Icon separator */
+         .btn-sep {
+           padding: 25px 60px 25px 120px;
+         }
 
- .btn-sep:before {
-   background: rgba(0,0,0,0.15);
- }
+         .btn-sep:before {
+           background: rgba(0,0,0,0.15);
+         }
 
- /* Button 1 */
- .btn-1 {
-   background: #3498db;
-   color: #fff;
- }
+         /* Button 1 */
+         .btn-1 {
+           background: #3498db;
+           color: #fff;
+         }
 
- .btn-1:hover {
-   background: #2980b9;
- }
+         .btn-1:hover {
+           background: #2980b9;
+         }
 
- .btn-1:active {
-   background: #2980b9;
-   top: 2px;
- }
+         .btn-1:active {
+           background: #2980b9;
+           top: 2px;
+         }
 
- .btn-1:before {
-   position: absolute;
-   height: 100%;
-   left: 0;
-   top: 0;
-   line-height: 3;
-   font-size: 140%;
-   width: 60px;
- }
+         .btn-1:before {
+           position: absolute;
+           height: 100%;
+           left: 0;
+           top: 0;
+           line-height: 3;
+           font-size: 140%;
+           width: 60px;
+         }
 
- /* Button 2 */
- .btn-2 {
-   background: #2ecc71;
-   color: #fff;
- }
+         /* Button 2 */
+         .btn-2 {
+           background: #2ecc71;
+           color: #fff;
+         }
 
- .btn-2:hover {
-   background: #27ae60;
- }
+         .btn-2:hover {
+           background: #27ae60;
+         }
 
- .btn-2:active {
-   background: #27ae60;
-   top: 2px;
- }
+         .btn-2:active {
+           background: #27ae60;
+           top: 2px;
+         }
 
- .btn-2:before {
-   position: absolute;
-   height: 100%;
-   left: 0;
-   top: 0;
-   line-height: 3;
-   font-size: 140%;
-   width: 60px;
- }
+         .btn-2:before {
+           position: absolute;
+           height: 100%;
+           left: 0;
+           top: 0;
+           line-height: 3;
+           font-size: 140%;
+           width: 60px;
+         }
 
- /* Button 3 */
- .btn-3 {
-   background: #e74c3c;
-   color: #fff;
- }
+         /* Button 3 */
+         .btn-3 {
+           background: #e74c3c;
+           color: #fff;
+         }
 
- .btn-3:hover {
-   background: #c0392b;
- }
+         .btn-3:hover {
+           background: #c0392b;
+         }
 
- .btn-3:active {
-   background: #c0392b;
-   top: 2px;
- }
+         .btn-3:active {
+           background: #c0392b;
+           top: 2px;
+         }
 
- .btn-3:before {
-   position: absolute;
-   height: 100%;
-   left: 0;
-   top: 0;
-   line-height: 3;
-   font-size: 140%;
-   width: 60px;
- }
+         .btn-3:before {
+           position: absolute;
+           height: 100%;
+           left: 0;
+           top: 0;
+           line-height: 3;
+           font-size: 140%;
+           width: 60px;
+         }
 
- /* Button 4 */
- .btn-4 {
-   background: #34495e;
-   color: #fff;
- }
+         /* Button 4 */
+         .btn-4 {
+           background: #34495e;
+           color: #fff;
+         }
 
- .btn-4:hover {
-   background: #2c3e50;
- }
+         .btn-4:hover {
+           background: #2c3e50;
+         }
 
- .btn-4:active {
-   background: #2c3e50;
-   top: 2px;
- }
+         .btn-4:active {
+           background: #2c3e50;
+           top: 2px;
+         }
 
- .btn-4:before {
-   position: absolute;
-   height: 100%;
-   left: 0;
-   top: 0;
-   line-height: 3;
-   font-size: 140%;
-   width: 60px;
- }
+         .btn-4:before {
+           position: absolute;
+           height: 100%;
+           left: 0;
+           top: 0;
+           line-height: 3;
+           font-size: 140%;
+           width: 60px;
+         }
 
- /* Icons */
+         /* Icons */
 
- .icon-cart:before {
-   content: "\f07a";
- }
+         .icon-cart:before {
+           content: "\f07a";
+         }
 
- .icon-heart:before {
-   content: "\f55a";
- }
+         .icon-heart:before {
+           content: "\f55a";
+         }
 
- .icon-info:before {
-   content: "\f05a";
- }
+         .icon-info:before {
+           content: "\f05a";
+         }
 
- .icon-send:before {
-   content: "\f1d8";
- }
-   </style>
+         .icon-send:before {
+           content: "\f1d8";
+         }
+
+       /* Navigation Bar Styles */
+       nav {
+           background-color: #333;
+           overflow: hidden;
+       }
+
+       nav a {
+           float: left;
+           display: block;
+           color: white;
+           text-align: center;
+           padding: 14px 20px;
+           text-decoration: none;
+       }
+
+       nav a:hover {
+           background-color: #ddd;
+           color: black;
+       }
+    </style>
 </head>
 <body>
+    <nav>
+        <a href="manual_guide.html">Manual Guide</a>
+    </nav>
+
     <h2>Fill the PDF Form</h2>
     <iframe id="pdfViewer" src="Borang Penangguhan dan Penggantian Kuliah.pdf"></iframe>
 
     <div class="form-actions">
-        <button class="btn btn-4 icon-send" onclick="editPDF()">Edit PDF</button>
         <button class="btn btn-4 icon-send" onclick="sendEmail1()">Send To "TPA"</button>
+        <button class="btn btn-4 icon-info" onclick="editPDF()">Edit File(Excel)</button>
         <button class="btn btn-4 icon-send" onclick="sendEmail2()">Send To "KPA"</button>
     </div>
 
     <script>
         function editPDF() {
-            window.open('https://www.ilovepdf.com/edit-pdf', '_blank');
+            window.open('https://docs.google.com/spreadsheets/d/1HpjUrWR6-VgSfbnhDNd7ol_azEucNMdC/edit?gid=1756592619#gid=1756592619', '_blank');
         }
 
         function sendEmail1() {
